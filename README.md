@@ -12,6 +12,7 @@ El proyecto se centra en temas de **gamificación** y alinea todos los component
 - [Video Demo](#demostración-de-funcionamiento)
 - [Evaluación del Proyecto](#evaluación-del-proyecto)
 - [Informe Final](#informe-final)
+- [Consideraciones de uso](#consideraciones-de-uso)
 
 ## Estructura del Proyecto
 
@@ -113,3 +114,17 @@ Los resultados indicaron que las aplicaciones gamificadas aportan significativam
 ## Informe Final
 
 - [Informe Final](/Quauhtlemallan/docs/Proyecto_Quauhtlemallan.pdf)
+
+## Consideraciones de Uso
+
+Este proyecto se proporciona con las siguientes condiciones:
+
+1. **Prohibido monetizar sin autorización**  
+   No está permitido usar este proyecto o sus derivados para fines comerciales o de monetización sin obtener previamente el consentimiento explícito del autor.
+
+2. **Modificaciones y expansiones**  
+   Si deseas realizar modificaciones, crear expansiones o utilizar este proyecto como base para otros trabajos, por favor consulta previamente con el autor.
+
+3. **Atribución obligatoria**  
+   En cualquier uso permitido, se debe dar crédito al autor original, mencionando este repositorio como la fuente principal.
+
