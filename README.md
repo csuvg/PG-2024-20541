@@ -47,21 +47,21 @@ Posterior a eso se trabajan los diferentes ambientes:
 
 Con ayuda de Android Studio se carga el proyecto, la carpeta [Android App](/Quauhtlemallan/src/Android_App/), (y con un dispositivo virtual o físico instalado) se ejecuta la aplicación y se deberían instalar todas las dependencias necesarias. De aparecer un error como la imagen que se muestra a continuación:
 
-#foto
+![image](https://github.com/user-attachments/assets/326f51b8-90c2-4c26-a3ca-0d0ab2f3bd0a)
 
 Es necesario iniciar Android Studio con permisos de administrador y una vez se ejecuta de esta forma la aplicación debería iniciarse automáticamente y ya estaría disponible para su uso.
 
 ### Endpoints
 
-#foto
+![image-1](https://github.com/user-attachments/assets/d114a12c-7858-42fd-aac1-c42a0984e34d)
 
 Una vez se inicia sesión en Hugging Face y se tiene acceso a los diferentes datasets y modelos es posible subir y descargar los mismos. En la carpeta [Kukul](/Quauhtlemallan/src/Kukul_Bot/) se encuentran los notebooks y datasets utilizados; Para poder subir modelos de autoría propia se pueden seguir los pasos del [Notebook de Fine Tunning](/Quauhtlemallan/src/Kukul_Bot/Fine_tune_Llama2_Kukul.ipynb). Posterior a tener el modelo ubicado se trabajara en la página de Endpoints https://huggingface.co/inference-endpoints/dedicated, con una cuenta creada se podrán levantar diferentes endpoints desde el dashboard:
 
-#foto
+![image-2](https://github.com/user-attachments/assets/27c0d112-29c2-402c-bc2b-c0eb2e50b3ec)
 
 En cada endpoint se solicita una serie de datos relacionado al modelo sobre el que se trabajara. Se usará el nombre del modelo y se configurará acorde a las necesidades. Para el caso del proyecto se siguieron los datos recomendados.
 
-#foto
+![image-3](https://github.com/user-attachments/assets/2b46310a-227a-49a9-b8a2-de16570cd9fd)
 
 Y una vez este es creado se activa o desactiva conforme su uso para evitar costos. Para el caso de Kukul se debe utilizar el modelo en su versión 3: https://huggingface.co/ChrisG19/Llama-2-7b-kukul-bot-v3 que fue la versión final. Luego de que este endpoint está creado se procedería a configurar el servicio cloud.
 
@@ -69,29 +69,29 @@ Y una vez este es creado se activa o desactiva conforme su uso para evitar costo
 
 Usando el código de la carpeta [Google Cloud](/Quauhtlemallan/src/Google_Cloud/) se creará un contenedor de Cloud Run para levantar un servicio que permita la transferencia de datos.
 
-#foto
+![image-4](https://github.com/user-attachments/assets/5421c193-37e5-46ef-b85b-b2e5f40ed756)
 
 Desde la consola de Google Cloud se creará un proyecto y dentro de este se buscará el apartado de **Cloud Run**.
 
-#foto
+![image-5](https://github.com/user-attachments/assets/a9387647-0e73-41fb-a9cf-3987f556b1f6)
 
 Una vez dentro de este módulo se creará un servicio y accediendo a la consola y accediendo al editor:
 
-#foto
-#foto
+![image-6](https://github.com/user-attachments/assets/bb0cecef-9d16-4930-b8e3-eaf759b4bbd3)
+![image-7](https://github.com/user-attachments/assets/fa4cb42d-4fcc-45d0-9fe0-6ddd0366cb54)
 
 Se copiaran los archivos en una carpeta (en este caso fue llamada chatbot) y en la parte inferior izquierda se accederá a las opciones cloud
 
-#foto
-#foto
+![image-8](https://github.com/user-attachments/assets/444e8c02-19f2-4c16-8e42-3531f3560f20)
+![image-9](https://github.com/user-attachments/assets/0c5042ab-798c-4e10-a3bb-41e4295108a0)
 
 Esto solicitará acceso a credenciales y posterior a autorizar se configurará el despliegue.
 
-#foto
+![image-10](https://github.com/user-attachments/assets/ed36f035-80ec-4303-a228-1930150c6c59)
 
 Para poder hacer pruebas del servicio se correrá con el emulador de Cloud Run y posterior a revisar que todo funciona bien (se levantará el contenedor y Google ofrecerá una url para poder revisar el estado del servicio). Una vez se evalua que todo funciona se procede a desplegar el servicio y esto consta de seguir los pasos que Google menciona.
 
-#foto
+![image-11](https://github.com/user-attachments/assets/92a722d9-119f-4ba7-b89d-fd3def25d9b8)
 
 Al finalizar todo este proceso el servicio quedará arriba y a través de la url que ofrece el servicio se podrá consultar el mismo para realizar las transacciones entre la aplicación y el endpoint de Hugging Face.
 
