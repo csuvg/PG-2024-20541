@@ -97,8 +97,8 @@ Al finalizar todo este proceso el servicio quedará arriba y a través de la url
 
 ## Demostración de funcionamiento
   
-- [Funcionamiento de aplicación final](/Quauhtlemallan/demo/FuncionamientoFinal.mp4)
-- [Funcionamiento de endpoint](/Quauhtlemallan/demo/KukulEndPoint.mp4)
+- [Funcionamiento de aplicación final](/Quauhtlemallan/demo/Demo.mp4)
+- [Funcionamiento de endpoint](/Quauhtlemallan/demo/KukulEndPointDemo.mp4)
 
 ## Evaluación del Proyecto
 
